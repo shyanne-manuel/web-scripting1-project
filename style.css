@@ -6,11 +6,46 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {
+    font-family: "Sixtyfour", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+    
 }
 
-.title-page {
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #071821;
+    color: #E0F8CF;
+    margin: .5rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px  #07182187;
+}
+
+button:hover {
+    background-color:#E0F8CF;
+    color: #071821;
+    box-shadow: 10px 10px #e0f8cf8f;
+}
+button:active {
+    transform: translateY(5px);
+    box-shadow: 5px 5px #e0f8cf8f;
+}
+
+
+.site-header {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.page-setup {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,21 +53,18 @@ button {
     height: 50vh;
 }
 
-.title-page h1 {
-    font-family: "Sixtyfour", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 5rem;
-    font-style: normal;
-    font-variation-settings:
-      "BLED" 0,
-      "SCAN" 0;
-
+.title-page {
+    display: none;
 }
 
-.title-page .start-btn {
-    background-color: #071821;
-    color: #E0F8CF;
+
+.title-page h1 {
+    font-size: 5rem;
+}
+
+/* -----------set properties for start-btn;;; to be deleted if ended up not using------------------ */
+
+/* .title-page .start-btn {
     padding: 1rem 2rem;
     font-size: 2rem;
     border-radius: 10px;
@@ -47,11 +79,14 @@ button {
 .start-btn:active {
     transform: translateY(5px);
     box-shadow: 5px 5px #e0f8cf8f;
+} */
+
+.level-page {
+    display: none;
+}
+
+.level-page .level-btn{
+    display: flex;
 }
 
 
-
-.site-header {
-    width: 5rem;
-    height: 5rem;
-}
