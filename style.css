@@ -1,0 +1,57 @@
+
+
+body {
+    background-color: #86C06C;
+    color:#071821;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.title-page h1 {
+    font-family: "Sixtyfour", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 5rem;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+
+}
+
+.title-page .start-btn {
+    background-color: #071821;
+    color: #E0F8CF;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px  #07182187;
+}
+
+.start-btn:hover {
+    background-color:#E0F8CF;
+    color: #071821;
+    box-shadow: 10px 10px #e0f8cf8f;
+}
+.start-btn:active {
+    transform: translateY(5px);
+    box-shadow: 5px 5px #e0f8cf8f;
+}
+
+
+
+.site-header {
+    width: 5rem;
+    height: 5rem;
+}
