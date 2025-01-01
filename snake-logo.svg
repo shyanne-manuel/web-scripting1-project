@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #071821;
+      }
+
+      .st1 {
+        fill: #e0f8cf;
+        stroke: #86c06c;
+        stroke-miterlimit: 10;
+        stroke-width: 9.8px;
+      }
+
+      .st2 {
+        fill: #306850;
+      }
+
+      .st3 {
+        fill: #86c06c;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="st0" x="8.5" y="8.5" width="495" height="495" rx="87.8" ry="87.8"/>
+    <path class="st3" d="M415.7,17c43.7,0,79.3,35.6,79.3,79.3v319.3c0,43.7-35.6,79.3-79.3,79.3H96.3c-43.7,0-79.3-35.6-79.3-79.3V96.3c0-43.7,35.6-79.3,79.3-79.3h319.3M415.7,0H96.3C43.1,0,0,43.1,0,96.3v319.3c0,53.2,43.1,96.3,96.3,96.3h319.3c53.2,0,96.3-43.1,96.3-96.3V96.3c0-53.2-43.1-96.3-96.3-96.3h0Z"/>
+  </g>
+  <circle class="st2" cx="152.3" cy="136.8" r="29.8"/>
+  <circle class="st2" cx="211.8" cy="136.8" r="29.8"/>
+  <circle class="st2" cx="271.4" cy="139.3" r="29.8"/>
+  <circle class="st2" cx="330.9" cy="139.3" r="29.8"/>
+  <circle class="st2" cx="92.8" cy="136.8" r="29.8"/>
+  <circle class="st2" cx="92.8" cy="196.3" r="29.8"/>
+  <circle class="st2" cx="92.8" cy="255.9" r="29.8"/>
+  <circle class="st2" cx="152.3" cy="254.6" r="29.8"/>
+  <circle class="st2" cx="211.8" cy="254.6" r="29.8"/>
+  <circle class="st2" cx="271.4" cy="257.1" r="29.8"/>
+  <circle class="st2" cx="330.9" cy="257.1" r="29.8"/>
+  <circle class="st2" cx="390.5" cy="257.1" r="29.8"/>
+  <circle class="st2" cx="390.5" cy="315.4" r="29.8"/>
+  <circle class="st2" cx="92.8" cy="373.7" r="29.8"/>
+  <circle class="st2" cx="152.3" cy="372.5" r="29.8"/>
+  <circle class="st2" cx="211.8" cy="372.5" r="29.8"/>
+  <circle class="st2" cx="271.4" cy="375" r="29.8"/>
+  <circle class="st2" cx="330.9" cy="375" r="29.8"/>
+  <circle class="st2" cx="390.5" cy="375" r="29.8"/>
+  <circle class="st1" cx="420.9" cy="141.1" r="55.2"/>
+</svg>
