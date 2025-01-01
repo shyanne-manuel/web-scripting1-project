@@ -42,6 +42,10 @@ button:active {
 .site-header {
     width: 5rem;
     height: 5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: .5rem;
 }
 
 
@@ -50,7 +54,7 @@ button:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 75vh;
 }
 
 .title-page {
@@ -81,12 +85,65 @@ button:active {
     box-shadow: 5px 5px #e0f8cf8f;
 } */
 
+/* ----level page styles ------------- */
+
 .level-page {
     display: none;
 }
 
 .level-page .level-btn{
     display: flex;
+}
+
+/* ----------gameboard styles ----------------- */
+
+.game-page {
+    /* display: none; */
+    margin-top: 2rem;
+}
+
+.scoreboard,
+.game-setting {
+    display: flex;
+    justify-content: space-between;
+    width: 75vh;
+}
+
+.scoreboard h2,
+.game-setting button {
+    margin: .25rem;
+    padding: .25rem .50rem;
+    font-size: 1.25rem;
+    background-color: #071821;
+    color: #E0F8CF;
+    border-radius: 5px;
+}
+
+
+
+.gameboard {
+    border-style: solid;
+    border-color: #306850;
+    background-color: #071821;
+    width: 75vh;
+    height: 50vh;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+
+.game-setting button {
+    box-shadow: 5px 5px  #07182187;
+}
+
+.game-setting button:hover {
+    background-color:#E0F8CF;
+    color: #071821;
+    box-shadow: 5px 5px #e0f8cf8f;
+}
+.game-setting button:active {
+    transform: translateY(2.5px);
+    box-shadow: 2.5px 2.5px #e0f8cf8f;
 }
 
 
