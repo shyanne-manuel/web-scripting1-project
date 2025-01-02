@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Classic Snake Game</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -21,39 +24,44 @@
 
     <main>
         
-            <section class="title-page page-setup">
+            <section class="title-page page-setup" id="title-page">
                 <h1>SNAKE GAME</h1>
-                <button class="start-btn">START GAME</button>
+                <button class="start-btn" id="start-btn">START GAME</button>
         
             </section>
 
-            <section class="level-page page-setup">
+            <section class="level-page page-setup" id="level-page">
                 <h1>CHOOSE DIFFICULTY</h1>
                 <div class="level-btn">
                     <button id="btn-easy">EASY</button>
                     <button id="btn-medium">MEDIUM</button>
-                    <button id="hard">HARD</button>
+                    <button id="btn-hard">HARD</button>
                 </div>
             </section>
 
-            <section class="game-page page-setup">
+            <section class="game-page page-setup" id="game-page">
                 <h1>SNAKE GAME</h1>
                 <section class="scoreboard">
-                    <h2>HIGH SCORE: </h2>
-                    <h2>SCORE: </h2>
+                    <h2>HIGH SCORE: 000</h2>
+                    <h2>SCORE: 000</h2>
                 </section>
 
                 <div class="gameboard">
 
                 </div>
 
+                
                 <section class="game-setting">
                     <button>QUIT</button>
                     <button>RESTART</button>
                 </section>
-
+                
             </section>
-
+            
+            <h3 class="space-bar" id="space-bar">
+                Press The Spacebar to Start
+            </h3>
+            
     </main>
     
 </body>
