@@ -174,4 +174,30 @@ button:active {
     box-shadow: 2.5px 2.5px #e0f8cf8f;
 }
 
+.game-over {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -25rem);
+    margin: 0 auto;
+    width: 25rem;
+    background-color: #30685096;
+    border: 3px solid #87c06c8f;
+    padding: .5rem;
+    
+}
+
+.game-over h3,
+.game-over h4 {
+    color: #E0F8CF;
+    font-size: 1rem;
+}
+
+.game-over div {
+    justify-content: center;
+    margin: 0;
+}
+
+
 

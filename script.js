@@ -6,15 +6,18 @@ const levelBtn = document.querySelectorAll ('.level-btn');
 const gamePage = document.getElementById ('game-page');
 const spaceBar = document.getElementById ('space-bar');
 const gameBoard = document.getElementById ('gameboard');
+const score = document.getElementById ('score');
+const highScore = document.getElementById ('high-score');
 
 // creating the elements
-let gridSize = 20 ;
+let gridSize = 25 ;
 let snake = [{x:10 , y:10}];
 let food = generateFoodElement();
 let direction = 'up';
 let gameInterval;
 let gameStart = false;
 let gameSpeedDelay = 200;
+let currentHighScore = 0;
 
 
 
@@ -38,6 +41,8 @@ function draw (){
     gameBoard.innerHTML = '';
     drawSnake ();
     drawFood ();
+    updateScore ();
+    checkCollision ();
 
 };
 
@@ -110,6 +115,7 @@ function move (){
     if (head.x === food.x && head.y === food.y){
         food = generateFoodElement();
         clearInterval(gameInterval);
+        increaseSpeed ();
         gameInterval = setInterval(()=> {
             move ();
             draw ();
@@ -134,7 +140,7 @@ function startGame (){
     gameInterval = setInterval(() => {
         move ();
         draw ();
-        // checkCollision ();
+        checkCollision ();
     }, gameSpeedDelay)
 };
 
@@ -168,3 +174,53 @@ function handleKeyPress (event){
 };
 
 document.addEventListener('keydown', handleKeyPress);
+
+
+// increases the speed of the snake as it eats food
+function increaseSpeed (){
+
+    console.log (gameSpeedDelay);
+    if ( gameSpeedDelay > 150) {
+        gameSpeedDelay -= 5;
+    } else if ( gameSpeedDelay > 100) {
+        gameSpeedDelay -= 3;
+    } else if (gameSpeedDelay > 50) {
+        gameSpeedDelay -= 2;
+    } else if ( gameSpeedDelay > 25) {
+        gameSpeedDelay -= 1;
+    }
+};
+
+
+function checkCollision (){
+    const head = snake[0];
+
+    if (head.x < 1 || head.x > gridSize || head.y < 1 || head.y > gridSize)  {
+        gameStart = false;
+        clearInterval(gameInterval);
+        console.log(gameSpeedDelay);
+        updateHighScore ();
+    }
+
+    for( let i = 1; i < snake.length ; i++) {
+        if (head.x === snake[i].x && head.y === snake[i].y){
+            gameStart = false;
+            clearInterval(gameInterval);
+            console.log(gameSpeedDelay);
+            updateHighScore ();
+        }
+    }
+};
+
+function updateScore (){
+    const currentScore = (snake.length - 1) * 2;
+    score.innerText = currentScore.toString().padStart(3,'0');
+}
+
+function updateHighScore (){
+    const currentScore = (snake.length - 1) * 2;
+    if (currentHighScore < currentScore) {
+        currentHighScore = currentScore;
+        highScore.innerText = currentHighScore.toString().padStart(3,'0');
+    }
+}
