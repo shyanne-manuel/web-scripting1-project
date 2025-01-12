@@ -1,3 +1,10 @@
+//Web Scripting 1 Final Project
+//JAvascript Game - Classic Snakes
+//By Shyanne Manuel
+//Reference: used freecodecamp tutorial as a reference and learn the codes new to me
+// https://www.youtube.com/watch?v=uyhzCBEGaBY
+
+
 
 const titlePage = document.getElementById('title-page');
 const startBtn = document.getElementById('start-btn');
