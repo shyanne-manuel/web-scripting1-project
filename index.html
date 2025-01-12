@@ -52,8 +52,8 @@
 
                 
                 <section class="game-setting">
-                    <button>QUIT</button>
-                    <button>RESTART</button>
+                    <button id="pause">PAUSE</button>
+                    <button id="restart">RESTART</button>
                 </section>
                 
             </section>
@@ -62,16 +62,22 @@
                 Press The Spacebar to Start
             </h3>
 
-            <section class="game-over">
+            <section class="game-float game-over" id="game-over">
                 <h3>GAME OVER!</h3>
-                <h4>YOUR SCORE: <span>000</span></h4>
-                <h4>HIGH SCORE: <span>000</span></h4>
+                <h3>YOUR SCORE: <span id="game-over-score">000</span></h3>
+                <h3>HIGH SCORE: <span id="game-over-high-score">000</span></h3>
                 <div class="game-setting">
-                    <button>PLAY AGAIN</button>
-                    <button>MAIN MENU</button>
+                    <button id="game-over-restart">PLAY AGAIN</button>
+                    <button id="main-menu">MAIN MENU</button>
                 </div>
 
-
+            </section>
+            <section class="game-float game-paused" id="pause-page">
+                <h3>QUIT GAME?</h3>
+                <div class="game-setting">
+                    <button id="resume-button">RESUME</button>
+                    <button id="quit-button">QUIT</button>
+                </div>
             </section>
             
     </main>

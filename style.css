@@ -63,7 +63,7 @@ button:active {
 }
 
 .title-page {
-    display: flex;
+    display: flex; 
 }
 
 
@@ -174,8 +174,8 @@ button:active {
     box-shadow: 2.5px 2.5px #e0f8cf8f;
 }
 
-.game-over {
-    display: none;
+.game-float {
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -188,16 +188,24 @@ button:active {
     
 }
 
-.game-over h3,
-.game-over h4 {
+.game-over {
+    display: none;
+}
+
+.game-paused {
+    display: none;
+}
+
+.game-float h3 {
     color: #E0F8CF;
     font-size: 1rem;
 }
 
-.game-over div {
+.game-float div {
     justify-content: center;
     margin: 0;
 }
+
 
 
 
