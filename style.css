@@ -137,14 +137,12 @@ button:active {
 
 .space-bar {
     display: none;
-    position: absolute;
-    top: 50%;
-    left: 35%;
     width: 28.125rem;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0;
-    margin: 0;
-    color: #E0F8CF;
+    margin: auto ;
+    color: #102203; 
 }
 
 .snake {
@@ -199,6 +197,8 @@ button:active {
 .game-float h3 {
     color: #E0F8CF;
     font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .game-float div {

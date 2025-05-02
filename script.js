@@ -62,7 +62,7 @@ function gameReveal(e) {
 
     levelPage.style.display = 'none';
     gamePage.style.display = 'flex';
-    spaceBar.style.display = 'block';
+    spaceBar.style.display = 'flex';
     // restartBtn.disabled = 'true';
     // pauseBtn.disabled = 'true';
 };
